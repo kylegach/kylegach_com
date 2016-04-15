@@ -28,9 +28,7 @@ class Template extends Component {
         <div className="content maxW-4 mx-auto p-2 pb-4 px-4@sm">
           {children}
         </div>
-        {/*TODO: See Footer.js*/}
-        <Footer className="footer" isReverse={this.state.isReverse} toggleReverse={this.toggleReverse} />
-        {/*<Footer className="footer" />*/}
+        <Footer className="footer" />
       </div>
     )
   }

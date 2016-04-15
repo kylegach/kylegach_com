@@ -1,6 +1,6 @@
 ---
 title: Everything I Did to Make This Site Accessible
-path: /writing/everything-i-did-to-make-this-site-accessible
+path: /writing/everything-i-did-to-make-this-site-accessible/
 date: 2016-04-13T04:54:54Z
 ---
 

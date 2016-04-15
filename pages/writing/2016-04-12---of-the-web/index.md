@@ -1,6 +1,6 @@
 ---
 title: Of the Web
-path: /writing/of-the-web
+path: /writing/of-the-web/
 date: 2016-04-12T14:01:34Z
 ---
 

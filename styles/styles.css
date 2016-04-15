@@ -1,0 +1,31 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+@import './modules/_variables.css';
+/*@import './modules/_fonts.css';*/
+@import './modules/_globals.css';
+@import './modules/_typography.css';
+@import './modules/_typeScale.css';
+@import './modules/_hide.css';
+@import './modules/_layout.css';
+@import './modules/_position.css';
+@import './modules/_margin.css';
+@import './modules/_padding.css';
+@import './modules/_flexbox.css';
+@import './modules/_border.css';
+@import './modules/_colors.css';
+@import './modules/_button.css';
+
+@import './components/_wrap.css';
+@import './components/_figure.css';
+@import './components/_stickyFooter.css';
+
+@font-face {
+	font-family: 'league_spartanregular';
+	src: url('./leaguespartan-bold-webfont.eot');
+	src: url('./leaguespartan-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('./leaguespartan-bold-webfont.woff2') format('woff2'),
+		url('./leaguespartan-bold-webfont.woff') format('woff'),
+		url('./leaguespartan-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

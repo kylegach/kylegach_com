@@ -1,0 +1,108 @@
+/* Breakpoints */
+@custom-media --bp-xs    (max-width: 39.999em);
+@custom-media --bp-sm    (min-width: 40em);
+@custom-media --bp-sm-md (min-width: 40em) and (max-width: 59.999em);
+@custom-media --bp-md    (min-width: 60em);
+@custom-media --bp-md-lg (min-width: 60em) and (max-width: 71.999em);
+@custom-media --bp-lg    (min-width: 72em);
+
+:root {
+  /* Typography */
+  --webFont: 'league_spartanregular';
+
+  --lineHeight-1: 1;
+  --lineHeight-2: 1.125;
+  --lineHeight-3: 1.25;
+  --lineHeight-4: 1.5;
+  --letterSpacing-caps: 0.1em;
+  --fontWeight-bold: bold;
+
+  /* Type Scale */
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: 0.875rem;
+  --h6: 0.75rem;
+
+  /* Spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  /* Widths */
+  --width-1: 25rem;
+  --width-2: 30rem;
+  --width-3: 40rem;
+  --width-4: 60rem;
+
+  /* Z-indexes */
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+  --z-4: 4;
+
+  /* Borders */
+  --borderWidth: 1px;
+  --borderRadius: 0.25rem;
+
+  /* Darker & Lighter */
+  --darker-1: rgba(0,0,0,0.0625);
+  --darker-2: rgba(0,0,0,0.125);
+  --darker-3: rgba(0,0,0,0.25);
+  --darker-4: rgba(0,0,0,0.5);
+
+  --lighter-1: rgba(255,255,255,0.0625);
+  --lighter-2: rgba(255,255,255,0.125);
+  --lighter-3: rgba(255,255,255,0.25);
+  --lighter-4: rgba(255,255,255,0.5);
+
+  /* Colors */
+  --cream     : hsl(39 , 25%, 96%);
+  --magenta   : hsl(329, 69%, 56%);
+  --red       : hsl(5  , 54%, 52%);
+  --orange    : hsl(18 , 73%, 52%);
+  --yellow    : hsl(45 , 84%, 58%);
+  --lime      : hsl(86 , 62%, 62%);
+  --green     : hsl(116, 40%, 62%);
+  --teal      : hsl(191, 47%, 55%);
+  /*--teal      : hsl(176, 61%, 60%);*/
+  --aqua      : hsl(198, 68%, 71%);
+  --lightBlue : hsl(201, 58%, 62%);
+  --blue      : hsl(203, 47%, 55%);
+  --navy      : hsl(212, 48%, 22%);
+  --lavender  : hsl(263, 65%, 64%);
+
+  --siteBkg: var(--cream);
+  --textColor: var(--navy);
+  --linkColor: var(--blue);
+  --borderColor-light: color(var(--textColor) a(-75%));
+
+  --sectionBlockBorder-1: var(--blue);
+  --sectionBlockBorder-2: var(--red);
+  --sectionBlockBorder-3: var(--yellow);
+  --sectionBlockBorder-4: var(--green);
+
+  --siteBkg-reverse: hsl(212,20%,15%);
+  --textColor-reverse: hsl(231,18%,75%);
+  --linkColor-reverse: var(--lavender);
+  --borderColor-light-reverse: color(var(--textColor-reverse) a(-75%));
+
+  --sectionBlockBorder-1-reverse: var(--lavender);
+  --sectionBlockBorder-2-reverse: var(--lightBlue);
+  --sectionBlockBorder-3-reverse: var(--magenta);
+  --sectionBlockBorder-4-reverse: var(--lime);
+
+  /* Button */
+  --button-fontFamily: inherit;
+  --button-fontSize: inherit;
+  --button-fontWeight: var(--fontWeight-bold);
+  --button-lineHeight: var(--lineHeight-2);
+  --button-paddingY: calc(var(--space-1)/2);
+  --button-paddingX: var(--space-1);
+  --button-color: white;
+  --button-bkg: var(--linkColor);
+  --button-color-reverse: var(--siteBkg-reverse);
+  --button-bkg-reverse: var(--linkColor-reverse);
+}

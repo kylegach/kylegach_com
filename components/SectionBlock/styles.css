@@ -1,0 +1,39 @@
+@import '../../styles/modules/_variables.css';
+
+[class*="sectionBlock"]::before {
+  bottom: 0;
+	content: "";
+  display: block;
+	left: -var(--space-1);
+	position: absolute;
+	top: 0;
+	width: 4px;
+
+  @media (--bp-md) {
+    left: calc(25% - 2px);
+  }
+}
+
+.sectionBlock--work::before {
+  background-color: var(--sectionBlockBorder-2);
+
+  @nest .is-reverse & {
+    background-color: var(--sectionBlockBorder-2-reverse);
+  }
+}
+
+.sectionBlock--writing::before {
+  background-color: var(--sectionBlockBorder-3);
+
+  @nest .is-reverse & {
+    background-color: var(--sectionBlockBorder-3-reverse);
+  }
+}
+
+.sectionBlock--about::before {
+  background-color: var(--sectionBlockBorder-4);
+
+  @nest .is-reverse & {
+    background-color: var(--sectionBlockBorder-4-reverse);
+  }
+}

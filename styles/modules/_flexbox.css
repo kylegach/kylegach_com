@@ -1,0 +1,67 @@
+/* Flexbox */
+
+.flex { display: flex }
+
+@media (--bp-sm) {
+  .flex\@sm { display: flex }
+}
+
+@media (--bp-md) {
+  .flex\@md { display: flex }
+}
+
+@media (--bp-lg) {
+  .flex\@lg { display: flex }
+}
+
+.flex-reverse       { flex-direction: row-reverse }
+.flex-column        { flex-direction: column }
+.flex-columnReverse { flex-direction: column-reverse }
+.flex-wrap          { flex-wrap: wrap }
+
+.items-start    { align-items: flex-start }
+.items-end      { align-items: flex-end }
+.items-center   { align-items: center }
+.items-baseline { align-items: baseline }
+.items-stretch  { align-items: stretch }
+
+.self-start    { align-self: flex-start }
+.self-end      { align-self: flex-end }
+.self-center   { align-self: center }
+.self-baseline { align-self: baseline }
+.self-stretch  { align-self: stretch }
+
+.justify-start   { justify-content: flex-start }
+.justify-end     { justify-content: flex-end }
+.justify-center  { justify-content: center }
+.justify-between { justify-content: space-between }
+.justify-around  { justify-content: space-around }
+
+.content-start   { align-content: flex-start }
+.content-end     { align-content: flex-end }
+.content-center  { align-content: center }
+.content-between { align-content: space-between }
+.content-around  { align-content: space-around }
+.content-stretch { align-content: stretch }
+
+.flexItem-25  { flex: 0 0 25% }
+.flexItem-33  { flex: 0 0 33.333333333% }
+.flexItem-50  { flex: 0 0 50% }
+.flexItem-66  { flex: 0 0 66.666666666% }
+.flexItem-75  { flex: 0 0 75% }
+.flexItem-100 { flex: 0 0 100% }
+
+/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flexItem-auto {
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+
+.flexItem-none { flex: none }
+
+.order-0 { order: 0 }
+.order-1 { order: 1 }
+.order-2 { order: 2 }
+.order-3 { order: 3 }
+.order-last { order: 99999 }

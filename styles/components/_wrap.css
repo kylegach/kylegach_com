@@ -1,0 +1,11 @@
+/* Wrap */
+
+.wrap {
+  color: var(--textColor);
+  background-color: var(--siteBkg);
+
+  &.is-reverse {
+    color: var(--textColor-reverse);
+    background-color: var(--siteBkg-reverse);
+  }
+}

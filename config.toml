@@ -1,0 +1,78 @@
+siteTitle = "Kyle Gach"
+blogTitle = "Of The Web"
+linkPrefix = "/notUsedYet"
+email = "kyle.gach@gmail.com"
+twitter = "@kylegach"
+
+[js]
+head = """
+if ('classList' in document.createElement('div') && 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach) {
+  document.documentElement.classList += 'js';
+  var scriptSources = [
+    '//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineMax.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/AttrPlugin.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js',
+    '/bundle.js'
+  ];
+  for ( var i=0; i<scriptSources.length; i++ ) {
+    var script = document.createElement('script');
+    script.src = scriptSources[i];
+    document.getElementsByTagName('body')[0].appendChild(script);
+  }
+}
+"""
+analytics = """
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-76450703-1', 'auto');
+ga('send', 'pageview');
+"""
+
+[header]
+text = """
+<p><span class=\"bold\">Hi.</span> I’m a front-end developer.</p>
+<p>I use pen \u0026 paper, vectors, pixels, HTML, CSS, and JavaScript to think about and build systems on the web that help people.</p>
+"""
+
+[work]
+title = "Work"
+blurb = "Here are some of the more interesting projects I’ve worked on. I’ve mostly done front-end development \u0026 architecture, prototyping, and UX research \u0026 design."
+dir = "work"
+
+[writing]
+title = "Writing"
+blurb = "I believe design is made with words, not just pixels and code. This is where I practice."
+dir = "writing"
+
+[about]
+title = "About"
+text = '''
+<div class="left@md mb-3 flex@sm items-center">
+  <img src="/avatar.png" alt="Profile picture of Kyle" class="block w-25 flexItem-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
+  <p class="flexItem-auto">I care about an open, accessible, fast, responsive, and well-built web that puts people first. When I’m not working toward that, I’m probably reading, riding my bike, or enjoying a craft beer or cocktail.</p>
+</div>
+<div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
+  <h3 class="h4 mb-0">I’m Very Good With</h3>
+  <ul style="margin-top:1.5rem">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Progressive Enhancement</li>
+    <li>Responsive Web Design</li>
+    <li>Communication</li>
+    <li>Learning</li>
+  </ul>
+</div>
+<div class="left@sm w-50@sm pl-2@sm">
+  <h3 class="h4 mb-0">I’m Getting Better With</h3>
+  <ul style="margin-top:1.5rem">
+    <li><abbr title="Accessibility">A11y</abbr></li>
+    <li>Performance</li>
+    <li>Build Tools</li>
+    <li>Typography</li>
+    <li>Color Theory</li>
+    <li>React</li>
+  </ul>
+</div>
+'''

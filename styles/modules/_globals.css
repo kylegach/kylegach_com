@@ -1,0 +1,122 @@
+/* Globals */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+
+  @media (--bp-lg) {
+    font-size: 120%;
+  }
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* No default top margin on typographic elements */
+h1, h2, h3, h4, h5, h6, p, ol, ul, figure {
+  margin-top: 0;
+}
+
+/* 1 - This may be a magic number. Need to test with other fonts with widely different metrics. */
+ol, ul {
+  counter-reset: list;
+  list-style: none;
+
+  & > li {
+    position: relative;
+
+    &::before {
+      color: color(var(--textColor) a(-50%));
+      position: absolute;
+      top: 0;
+      right: 100%;
+      margin-right: var(--space-1);
+
+      @nest .is-reverse & {
+        color: color(var(--textColor-reverse) a(-50%));
+      }
+    }
+  }
+}
+
+ol {
+  padding-left: 1.5em; /* 1 */
+
+  & > li::before {
+    content: counter(list) ".";
+    counter-increment: list;
+  }
+}
+
+ul {
+  padding-left: 0.9em; /* 1 */
+  & > li::before {
+    content: "\2022";
+  }
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Trying out no bottom margin on last children */
+:last-child {
+  margin-bottom: 0 !important;
+}
+
+a:link {
+  border-bottom: 1px solid color(var(--linkColor) a(-50%));
+  color: var(--linkColor);
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: color(var(--linkColor) s(-25%));
+}
+
+a:hover, a:focus {
+  border-bottom-color: var(--linkColor);
+}
+
+.is-reverse {
+  & a:link {
+    border-bottom-color: color(var(--linkColor-reverse) a(-50%));
+    color: var(--linkColor-reverse);
+  }
+
+  & a:visited {
+    color: color(var(--linkColor-reverse) s(-25%));
+  }
+
+  & a:hover,
+  & a:focus {
+    border-bottom-color: var(--linkColor-reverse);
+  }
+}
+
+a:active {
+
+}
+
+.camoLink:any-link {
+  border-bottom: 0;
+  color: inherit !important;
+}

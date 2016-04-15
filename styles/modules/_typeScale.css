@@ -1,0 +1,8 @@
+/* Type Scale */
+
+.h1, .fs-1 { font-size: var(--h1) }
+.h2, .fs-2 { font-size: var(--h2) }
+.h3, .fs-3 { font-size: var(--h3) }
+.h4, .fs-4 { font-size: var(--h4) }
+.h5, .fs-5 { font-size: var(--h5) }
+.h6, .fs-6 { font-size: var(--h6) }

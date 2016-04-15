@@ -1,0 +1,23 @@
+@import '../../styles/modules/_variables.css';
+
+[class*="sectionBlock"]::before {
+  bottom: 0;
+	content: "";
+  display: block;
+	left: -var(--space-1);
+	position: absolute;
+	top: 0;
+	width: 4px;
+
+  @media (--bp-md) {
+    left: calc(25% - 2px);
+  }
+}
+
+.sectionBlock--kyleGach::before {
+  background-color: var(--sectionBlockBorder-1);
+
+  @nest .is-reverse & {
+    background-color: var(--sectionBlockBorder-1-reverse);
+  }
+}

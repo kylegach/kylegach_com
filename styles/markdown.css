@@ -1,0 +1,39 @@
+@import './modules/_variables.css';
+
+.markdown {
+  & ol,
+  & ul {
+    @media (--bp-sm) {
+      padding-left: 0;
+    }
+
+    & > li {
+      margin-bottom: calc(var(--lineHeight-4)*1rem/2);
+    }
+  }
+
+  & pre {
+    background: var(--darker-1);
+    overflow: auto;
+    padding: var(--space-2);
+    margin: var(--lineHeight-4) 0;
+
+    @nest .is-reverse & {
+      background: var(--lighter-1);
+    }
+  }
+}
+
+.footnotes {
+  font-size: var(--h5);
+}
+
+.footnotes-sep {
+  border: none;
+  border-top: 1px solid var(--borderColor-light);
+  margin: var(--space-3) 0;
+
+  @nest .is-reverse & {
+    border-top-color: var(--borderColor-light-reverse);
+  }
+}

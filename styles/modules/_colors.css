@@ -1,0 +1,23 @@
+/* Colors */
+
+.bgDarker-1 { background-color: var(--darker-1) }
+.bgDarker-2 { background-color: var(--darker-2) }
+.bgDarker-3 { background-color: var(--darker-3) }
+.bgDarker-4 { background-color: var(--darker-4) }
+
+.bgLighter-1 { background-color: var(--lighter-1) }
+.bgLighter-2 { background-color: var(--lighter-2) }
+.bgLighter-3 { background-color: var(--lighter-3) }
+.bgLighter-4 { background-color: var(--lighter-4) }
+
+.is-reverse {
+  & .bgDarker-1 { background-color: var(--lighter-1) }
+  & .bgDarker-2 { background-color: var(--lighter-2) }
+  & .bgDarker-3 { background-color: var(--lighter-3) }
+  & .bgDarker-4 { background-color: var(--lighter-4) }
+
+  & .bgLighter-1 { background-color: var(--darker-1) }
+  & .bgLighter-2 { background-color: var(--darker-2) }
+  & .bgLighter-3 { background-color: var(--darker-3) }
+  & .bgLighter-4 { background-color: var(--darker-4) }
+}

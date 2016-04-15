@@ -1,0 +1,58 @@
+/* Typography */
+
+body {
+  /* Using the system font, if available (for now?) */
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+  line-height: var(--lineHeight-4);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--webFont);
+  font-weight: normal;
+  letter-spacing: calc(var(--letterSpacing-caps)/2);
+}
+
+.fontFamily-inherit { font-family: inherit }
+.fontSize-inherit { font-size: inherit }
+.color-inherit { color: inherit }
+.textDecoration-none { text-decoration: none }
+
+.bold    { font-weight: var(--fontWeight-bold) }
+.regular { font-weight: normal }
+.italic  { font-style: italic }
+.normal  { font-style: normal }
+.caps    { text-transform: uppercase; letter-spacing: var(--letterSpacing-caps); }
+
+.underline { text-decoration: underline }
+
+.textLeft    { text-align: left }
+.textCenter  { text-align: center }
+.textRight   { text-align: right }
+.textJustify { text-align: justify }
+
+.nowrap { white-space: nowrap }
+.breakWord { word-wrap: break-word }
+
+.lineHeight-1 { line-height: var(--lineHeight-1) }
+.lineHeight-2 { line-height: var(--lineHeight-2) }
+.lineHeight-3 { line-height: var(--lineHeight-3) }
+.lineHeight-4 { line-height: var(--lineHeight-4) }
+.lineHeight-44 { line-height: 44px }
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listStyle-none { list-style: none }
+
+.listReset {
+  padding-left: 0;
+
+  & > li::before {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+/* Figure */
+
+.svgHolder {
+	padding-bottom: 75%; /* 4:3 aspect ratio */
+	position: relative;
+}
+
+.svgHolder > svg {
+	left: 50%;
+	position: absolute;
+	top:0;
+	transform: translateX(-50%);
+}

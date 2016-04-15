@@ -1,0 +1,35 @@
+@import '../../styles/modules/_variables.css';
+
+.layout,
+.container,
+.widget {
+  fill: none;
+  stroke-width: 4;
+}
+
+.layout {
+  stroke: var(--blue);
+}
+
+.container {
+  stroke: var(--yellow);
+}
+
+.widget {
+  stroke: var(--green);
+  stroke-width: 16
+}
+
+.is-reverse {
+  & .layout {
+    stroke: var(--lavender);
+  }
+
+  & .container {
+    stroke: var(--lime);
+  }
+
+  & .widget {
+    stroke: var(--magenta);
+  }
+}

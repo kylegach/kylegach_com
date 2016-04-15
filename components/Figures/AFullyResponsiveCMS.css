@@ -1,0 +1,40 @@
+#deviceFrame {
+	background-color: #111;
+	border-radius: 8px;
+	box-sizing: content-box;
+	left: 50%;
+	padding: 3%;
+	position: absolute;
+	top:0;
+	transform: translateX(-50%);
+
+	@nest .is-reverse & {
+		background-color: white;
+	}
+
+	& > svg {
+		border: 1px solid black;
+	}
+}
+
+.white { fill: white }
+.black { fill: #333 }
+.accent { fill: #dae4f0 }
+.border { fill: #b0c0d0 }
+.blue { fill: #0b5486 }
+.darkBlue { fill: #003a5d }
+.red { fill: #e7243c }
+.text { opacity: 0.2 }
+.text.heading { opacity: 0.5 }
+.text.input-label,
+.text.input-label--filled { opacity: 0.2 }
+.button { fill: #a7c6e4 }
+.buttonBorder { fill: #8ea8c2 }
+.green { fill: #d3d657 }
+.greenBorder { fill: #b3b64a }
+.overlay { fill: black; opacity: 0 }
+.input { fill: white; stroke: #b0c0d0 }
+.input.filled { fill: #fafbfc }
+.icon { fill: none; stroke: #777 }
+.icon--blue { fill: none; stroke: #0b5486 }
+.icon--white { fill: none; stroke: white }

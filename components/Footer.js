@@ -7,10 +7,20 @@ import { Link } from 'react-router'
 class Footer extends Component {
 
   render() {
+    let homeLink
+    if ( this.props.location.pathname !== '/' ) {
+      homeLink = (
+        <li className="inlineBlock mr-3">
+          <Link to={prefixLink('/')}>Home</Link>
+        </li>
+      )
+    }
+
     return (
       <footer className="flexItem-none py-3 bgDarker-1">
-        <div className="maxW-4 mx-auto px-3 px-4@sm">
-          <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
+        <div className="maxW-4 mx-auto px-3 px-4@sm flex@sm flex-wrap">
+          <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center mr-auto@sm">
+            { homeLink }
             <li className="inlineBlock mr-3">
               <Link to={prefixLink('/work/')}>Work</Link>
             </li>
@@ -20,9 +30,11 @@ class Footer extends Component {
             <li className="inlineBlock mr-3">
               <a href={prefixLink('/resume/')}>Résumé</a>
             </li>
-            <li className="inlineBlock mr-auto">
+            <li className="inlineBlock mr-3">
               <Link to={prefixLink('/colophon/')}>Colophon</Link>
             </li>
+          </ul>
+          <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
             <li className="inlineBlock mr-3">
               <a href={'mailto:' + config.email}>Email</a>
             </li>

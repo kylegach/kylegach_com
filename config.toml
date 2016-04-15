@@ -70,7 +70,7 @@ text = '''
   <ul style="margin-top:1.5rem">
     <li><abbr title="Accessibility">A11y</abbr></li>
     <li>Performance</li>
-    <li>Build Tools</li>
+    <li>Build Tools (Gulp, Webpack)</li>
     <li>Typography</li>
     <li>Color Theory</li>
     <li>React</li>

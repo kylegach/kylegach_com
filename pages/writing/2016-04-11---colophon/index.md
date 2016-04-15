@@ -4,7 +4,7 @@ path: /colophon
 date: 2016-04-11T16:01:34Z
 ---
 
-**The full source code for the site is available on [Github](https://github.com/kylegach).**
+**The full source code for the site is available on [Github](https://github.com/kylegach/kylegach_com).**
 
 This site is built using [Gatsby](https://github.com/gatsbyjs/gatsby/), a fantastic little static site generator powered by [React](https://facebook.github.io/react/).
 

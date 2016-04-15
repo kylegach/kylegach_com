@@ -26,13 +26,13 @@ class Footer extends Component {
               <Link to={prefixLink('/colophon/')}>Colophon</Link>
             </li>
             <li className="inlineBlock mr-3">
-              <a href="mailto:kyle.gach@gmail.com">Email</a>
+              <a href={'mailto:' + config.email}>Email</a>
             </li>
             <li className="inlineBlock mr-3">
               <a href={'https://twitter.com/' + config.twitter}>Twitter</a>
             </li>
             <li className="inlineBlock mr-3">
-              <a href="https://github.com/kylegach">GitHub</a>
+              <a href={'https://github.com/' + config.github}>GitHub</a>
             </li>
           </ul>
           <span className="inlineBlock lineHeight-44 flex@sm flex-wrap items-center">

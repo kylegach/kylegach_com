@@ -3,6 +3,7 @@ blogTitle = "Of The Web"
 linkPrefix = "/notUsedYet"
 email = "kyle.gach@gmail.com"
 twitter = "@kylegach"
+github = "kylegach"
 
 [js]
 head = """

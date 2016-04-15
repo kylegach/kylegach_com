@@ -16,11 +16,49 @@
     background: var(--darker-1);
     overflow: auto;
     padding: var(--space-2);
-    margin: var(--lineHeight-4) 0;
+    margin: calc(var(--lineHeight-4)*1rem) 0;
 
     @nest .is-reverse & {
       background: var(--lighter-1);
     }
+  }
+
+  & p > img,
+  & figure {
+    background-color: var(--lighter-4);
+    display: block;
+    padding: var(--space-1);
+
+    @nest .is-reverse & {
+      background-color: var(--darker-3);
+    }
+  }
+
+  & figure {
+    margin-bottom: calc(var(--lineHeight-4)*1rem);
+  }
+
+  & figcaption {
+    font-size: var(--h5);
+  }
+
+  & .left  { margin-right: calc(var(--lineHeight-4)*1rem); }
+  & .right { margin-left: calc(var(--lineHeight-4)*1rem); }
+
+  @media (--bp-sm) {
+    & .left\@sm  { margin-right: calc(var(--lineHeight-4)*1rem); }
+    & .right\@sm { margin-left: calc(var(--lineHeight-4)*1rem); }
+
+    & .pull\@sm  { margin-left: calc(-1*var(--space-4)*2) }
+    & .push\@sm { margin-right: calc(-1*var(--space-4)*2) }
+  }
+
+  @media (--bp-md) {
+    & .left\@md  { margin-right: calc(var(--lineHeight-4)*1rem); }
+    & .right\@md { margin-left: calc(var(--lineHeight-4)*1rem); }
+
+    & .pull\@md  { margin-left: calc(-1*var(--space-4)*2) }
+    & .push\@md { margin-right: calc(-1*var(--space-4)*2) }
   }
 }
 

@@ -18,14 +18,20 @@ class MDWrapper extends Component {
     const date = access(page, 'data.date')
     const dirName = access(page, 'file.dirname').split('/')[0]
     const title = access(page, 'data.title') || page.path
+    const introTxt = access(page, 'data.intro') || ''
     const responsibilities = access(page, 'data.responsibilities') || ''
     const figure = access(page, 'data.figure') || ''
 
     const byline = (date && dirName === 'writes') ? (<Byline date={date} />) : ''
 
+    let intro
     let Responsibilities = []
     let Figure = []
     let workHeader = []
+
+    if ( introTxt ) {
+      intro = (<p className="fs-3 mt-2">{ introTxt }</p>)
+    }
 
     if ( figure ) {
       Figure = React.createElement(Figures[figure], {})
@@ -78,6 +84,7 @@ class MDWrapper extends Component {
           <main className="maxW-3 mx-auto">
             <h1 className="h1 mb-0">{title}</h1>
             { byline }
+            { intro }
             { workHeader }
             <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
           </main>

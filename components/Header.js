@@ -38,8 +38,8 @@ class Header extends Component {
     }
 
     return (
-      <header className="header flexItem-none mb-4">
-        <nav className="fs-5 maxW-4 mx-auto px-3 px-4@sm">
+      <header className="header flexItem-none mb-4" role="banner">
+        <nav className="fs-5 maxW-4 mx-auto px-3 px-4@sm" role="navigation">
           <h1 className="inline fontSize-inherit"><Link to={prefixLink('/')}>{config.siteTitle}</Link></h1>
           {seperator}
           {breadcrumbs}

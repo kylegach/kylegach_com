@@ -21,12 +21,12 @@ class Teaser extends Component {
 
     return (
       // TODO: Replace the flexItem-50 class with something more dynamic (quantity queries?)
-      <div className={row ? 'flexItem-50 mb-3 mb-0@sm pr-3@sm' : 'mb-3 mb-4@sm'}>
+      <article className={row ? 'flexItem-50 mb-3 mb-0@sm pr-3@sm' : 'mb-3 mb-4@sm'}>
         <h3 className="h4 mb-0"><Link to={prefixLink(page.path)} className="camoLink">{title}</Link></h3>
         {byline}
         <div className="mt-2">{blurb}</div>
         <Link to={prefixLink(page.path)} className="inlineBlock mt-2">Keep reading&hellip;</Link>
-      </div>
+      </article>
     )
   }
 }

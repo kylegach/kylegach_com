@@ -5,12 +5,12 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 
 
-class Breadcrumbs extends Component {
+class Header extends Component {
 
   render() {
-    const { route } = this.props
-    const path = route.page.path
-    const title = route.page.data.title
+    const { page } = this.props
+    const path = page.path
+    const title = page.data.title
 
     const seperator = (<span className="mx-1">/</span>)
 
@@ -38,17 +38,19 @@ class Breadcrumbs extends Component {
     }
 
     return (
-      <nav className="fs-5">
-        <h1 className="inline fontSize-inherit"><Link to={prefixLink('/')}>{config.siteTitle}</Link></h1>
-        {seperator}
-        {breadcrumbs}
-      </nav>
+      <header className="header flexItem-none mb-4">
+        <nav className="fs-5 maxW-4 mx-auto px-3 px-4@sm">
+          <h1 className="inline fontSize-inherit"><Link to={prefixLink('/')}>{config.siteTitle}</Link></h1>
+          {seperator}
+          {breadcrumbs}
+        </nav>
+      </header>
     )
   }
 }
 
-Breadcrumbs.propTypes = {
-  route: PropTypes.object.isRequired
+Header.propTypes = {
+  page: PropTypes.object.isRequired
 }
 
-export default Breadcrumbs
+export default Header

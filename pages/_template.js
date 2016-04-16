@@ -4,6 +4,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import suncalc from 'suncalc'
 
+import Header from 'components/Header'
 import Footer from 'components/Footer'
 
 import 'styles/styles.css'
@@ -19,13 +20,20 @@ class Template extends Component {
 	}
 
   render () {
-    const { children } = this.props
+    const { children, routes } = this.props
+    const page = routes[routes.length - 1].page
 
-    const wrapperClasses = 'wrap' + (this.state.isReverse ? ' is-reverse ' : '')
+    let header
+    if ( page.path !== '/' ) {
+      header = (<Header page={page} />)
+    }
+
+    const wrapperClasses = 'wrap pt-2' + (this.state.isReverse ? ' is-reverse ' : '')
 
     return (
       <div className={wrapperClasses}>
-        <div className="content maxW-4 mx-auto p-2 pb-4 px-4@sm">
+        { header }
+        <div className="content maxW-4 mx-auto px-2 px-4@sm pb-4">
           {children}
         </div>
         <Footer className="footer" {...this.props} />

@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react'
 import DocumentTitle from 'react-document-title'
 import access from 'safe-access'
 
-import Breadcrumbs from '../components/Breadcrumbs'
 import Byline from '../components/Byline'
 import Figures from 'components/Figures'
 
@@ -77,18 +76,13 @@ class MDWrapper extends Component {
 
     return (
       <DocumentTitle title={`${title} • ${config.siteTitle}`}>
-        <div>
-          <header className="mb-4">
-            <Breadcrumbs route={route}/>
-          </header>
-          <main className="maxW-3 mx-auto">
-            <h1 className="h1 mb-0">{title}</h1>
-            { byline }
-            { intro }
-            { workHeader }
-            <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
-          </main>
-        </div>
+        <main className="maxW-3 mx-auto">
+          <h1 className="h1 mb-0">{title}</h1>
+          { byline }
+          { intro }
+          { workHeader }
+          <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
+        </main>
       </DocumentTitle>
     )
   }

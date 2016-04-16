@@ -17,7 +17,7 @@ class Footer extends Component {
     }
 
     return (
-      <footer className="flexItem-none py-3 bgDarker-1">
+      <footer className="footer flexItem-none py-3 bgDarker-1">
         <div className="maxW-4 mx-auto px-3 px-4@sm flex@sm flex-wrap">
           <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center mr-auto@sm">
             { homeLink }

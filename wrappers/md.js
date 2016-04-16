@@ -76,8 +76,8 @@ class MDWrapper extends Component {
 
     return (
       <DocumentTitle title={`${title} • ${config.siteTitle}`}>
-        <main className="maxW-3 mx-auto">
-          <article>
+        <main className="maxW-3 mx-auto" role="main">
+          <article role="article">
             <h1 className="h1 mb-0">{title}</h1>
             { byline }
             { intro }

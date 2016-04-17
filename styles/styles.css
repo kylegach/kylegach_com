@@ -15,6 +15,7 @@
 @import './modules/_colors.css';
 
 @import './components/_wrap.css';
+@import './components/_skipLink.css';
 @import './components/_figure.css';
 @import './components/_stickyFooter.css';
 

@@ -6,6 +6,7 @@ import suncalc from 'suncalc'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import SkipLink from 'components/SkipLink'
 
 import 'styles/styles.css'
 
@@ -37,6 +38,7 @@ class Template extends Component {
     return (
       <div className={wrapperClasses}>
         { header }
+        <SkipLink />
         <div className="content maxW-4 mx-auto px-2 px-4@sm pb-4">
           {children}
         </div>

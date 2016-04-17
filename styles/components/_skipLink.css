@@ -1,0 +1,14 @@
+/* Skip Link */
+
+.skipLink {
+  top: 0;
+  left: 0;
+
+  /* Undoing .hide */
+  &:focus {
+    clip: initial;
+    height: auto;
+    width: auto;
+    overflow: visible;
+  }
+}

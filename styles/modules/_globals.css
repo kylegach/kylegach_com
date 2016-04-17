@@ -89,11 +89,13 @@ a:link {
 }
 
 a:visited {
-  color: color(var(--linkColor) s(-25%));
+  color: color(var(--linkColor) s(-40%) l(-10%));
+  border-bottom-color: color(var(--linkColor) s(-40%) l(-10%) a(-50%));
 }
 
 a:hover, a:focus {
   border-bottom-color: var(--linkColor);
+  color: var(--linkColor);
 }
 
 .is-reverse {
@@ -103,12 +105,14 @@ a:hover, a:focus {
   }
 
   & a:visited {
-    color: color(var(--linkColor-reverse) s(-25%));
+    color: color(var(--linkColor-reverse) s(-40%));
+    border-bottom-color: color(var(--linkColor-reverse) s(-40%) a(-50%));
   }
 
   & a:hover,
   & a:focus {
     border-bottom-color: var(--linkColor-reverse);
+    color: var(--linkColor-reverse);
   }
 }
 

@@ -59,7 +59,7 @@
   --lighter-4: rgba(255,255,255,0.5);
 
   /* Colors */
-  --cream     : hsl(39 , 25%, 96%);
+  --cream     : hsl(40 , 15%, 96%);
   --magenta   : hsl(329, 69%, 56%);
   --red       : hsl(5  , 54%, 52%);
   --orange    : hsl(18 , 73%, 52%);
@@ -70,22 +70,24 @@
   /*--teal      : hsl(176, 61%, 60%);*/
   --aqua      : hsl(198, 68%, 71%);
   --lightBlue : hsl(201, 58%, 62%);
-  --blue      : hsl(203, 47%, 55%);
+  --blue      : hsl(198, 76%, 32%);
   --navy      : hsl(212, 48%, 22%);
-  --lavender  : hsl(263, 65%, 64%);
+  --lavender  : hsl(263, 65%, 68%);
 
   --siteBkg: var(--cream);
   --textColor: var(--navy);
   --linkColor: var(--blue);
   --borderColor-light: color(var(--textColor) a(-75%));
 
-  --sectionBlockBorder-1: var(--blue);
+  /* Since this color is also used for links, which must meet AA contrast guidelines,
+     and since the border is much thicker than text, it needs adjustment to look right */
+  --sectionBlockBorder-1: color(var(--blue) l(+8%)); /* 1 */
   --sectionBlockBorder-2: var(--red);
   --sectionBlockBorder-3: var(--yellow);
   --sectionBlockBorder-4: var(--green);
 
   --siteBkg-reverse: hsl(212,20%,15%);
-  --textColor-reverse: hsl(231,18%,75%);
+  --textColor-reverse: hsl(212,15%,75%);
   --linkColor-reverse: var(--lavender);
   --borderColor-light-reverse: color(var(--textColor-reverse) a(-75%));
 

@@ -72,7 +72,7 @@
   --lightBlue : hsl(201, 58%, 62%);
   --blue      : hsl(198, 76%, 32%);
   --navy      : hsl(212, 48%, 22%);
-  --lavender  : hsl(263, 65%, 68%);
+  --lavender  : hsl(263, 65%, 72%);
 
   --siteBkg: var(--cream);
   --textColor: var(--navy);

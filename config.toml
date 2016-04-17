@@ -73,7 +73,7 @@ dir = "writing"
 title = "About"
 text = '''
 <div class="left@md mb-3 flex@sm items-center">
-  <img src="/avatar.png" alt="Profile picture of Kyle" class="block w-25 flexItem-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
+  <img src="/avatar.png" alt="Profile picture of Kyle" class="avatar block w-25 flexItem-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
   <p class="flexItem-auto">I care about an open, accessible, fast, responsive, and well-built web that puts people first. When I’m not working toward that, I’m probably reading, riding my bike, or enjoying a craft beer or cocktail.</p>
 </div>
 <div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">

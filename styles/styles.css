@@ -17,6 +17,7 @@
 @import './components/_wrap.css';
 @import './components/_skipLink.css';
 @import './components/_figure.css';
+@import './components/_avatar.css';
 @import './components/_stickyFooter.css';
 
 @font-face {

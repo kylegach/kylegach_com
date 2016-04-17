@@ -77,7 +77,7 @@ figure {
 }
 
 /* Trying out no bottom margin on last children */
-:last-child {
+:last-child:not(:first-child) {
   margin-bottom: 0 !important;
 }
 

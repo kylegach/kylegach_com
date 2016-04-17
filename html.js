@@ -10,11 +10,13 @@ class Root extends Component {
     // TODO: Compare with other pages
     const title = DocumentTitle.rewind()
 
+    let favicons
     let cssLink
     let AnalyticsJS1
     let AnalyticsJS2
 
     if (process.env.NODE_ENV === 'production') {
+      favicons = config.favicons
       cssLink = <link rel="stylesheet" href={prefixLink('/styles.css')} />
       AnalyticsJS1 = config.js.analytics
       AnalyticsJS2 = (<script async src="https://www.google-analytics.com/analytics.js"></script>)
@@ -27,9 +29,8 @@ class Root extends Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>{title}</title>
-          {/*TODO: Create favicon */}
-          {/*<link rel="shortcut icon" href="favicon.ico" />*/}
-          {cssLink}
+          { favicons }
+          { cssLink }
         </head>
         <body>
           {/* TODO: How to move this script into the <head>? Doing so gives an

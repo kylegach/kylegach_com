@@ -41,7 +41,7 @@ class Footer extends Component {
             <li className="inlineBlock mr-3">
               <a href={'https://twitter.com/' + config.twitter}>Twitter</a>
             </li>
-            <li className="inlineBlock mr-3">
+            <li className="inlineBlock">
               <a href={'https://github.com/' + config.github}>GitHub</a>
             </li>
           </ul>

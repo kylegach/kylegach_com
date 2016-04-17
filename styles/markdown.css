@@ -1,6 +1,12 @@
 @import './modules/_variables.css';
 
 .markdown {
+
+  & h2,
+  & h3 {
+    margin-top: 2.5rem;
+  }
+
   & ol,
   & ul {
     @media (--bp-sm) {

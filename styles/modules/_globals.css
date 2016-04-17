@@ -84,7 +84,6 @@ figure {
 a:link {
   border-bottom: 1px solid color(var(--linkColor) a(-50%));
   color: var(--linkColor);
-  padding-bottom: 1px;
   text-decoration: none;
 }
 

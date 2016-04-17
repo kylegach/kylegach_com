@@ -19,21 +19,23 @@ class Footer extends Component {
     return (
       <footer className="footer flexItem-none py-3 bgDarker-1">
         <div className="maxW-4 mx-auto px-3 px-4@sm flex@sm flex-wrap">
-          <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center mr-auto@sm">
-            { homeLink }
-            <li className="inlineBlock mr-3">
-              <Link to={prefixLink('/work/')}>Work</Link>
-            </li>
-            <li className="inlineBlock mr-3">
-              <Link to={prefixLink('/writing/')}>Writing</Link>
-            </li>
-            <li className="inlineBlock mr-3">
-              <a href={prefixLink('/resume/')}>Résumé</a>
-            </li>
-            <li className="inlineBlock mr-3">
-              <Link to={prefixLink('/colophon/')}>Colophon</Link>
-            </li>
-          </ul>
+          <nav id="nav" className="mr-auto@sm" role="navigation">
+            <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
+              { homeLink }
+              <li className="inlineBlock mr-3">
+                <Link to={prefixLink('/work/')}>Work</Link>
+              </li>
+              <li className="inlineBlock mr-3">
+                <Link to={prefixLink('/writing/')}>Writing</Link>
+              </li>
+              <li className="inlineBlock mr-3">
+                <a href={prefixLink('/resume/')}>Résumé</a>
+              </li>
+              <li className="inlineBlock mr-3">
+                <Link to={prefixLink('/colophon/')}>Colophon</Link>
+              </li>
+            </ul>
+          </nav>
           <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
             <li className="inlineBlock mr-3">
               <a href={'mailto:' + config.email}>Email</a>

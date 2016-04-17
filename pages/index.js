@@ -18,7 +18,7 @@ class Home extends Component {
           <HeaderBlock title={config.siteTitle}>
             <div dangerouslySetInnerHTML={{ __html: config.header.text }} />
           </HeaderBlock>
-          <main>
+          <main role="main">
 
             <SectionBlock
               title={config.work.title}

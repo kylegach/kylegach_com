@@ -342,7 +342,9 @@ const Figures = {
       return (
         <div className="svgHolder" style={{paddingBottom: '77%'}}>
         	<div id="deviceFrame" style={{width: '30.6%', height: '70.6%'}}>
-        		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="aFullyResponsiveCMS" viewBox="0 0 375 667" style={{background: '#e9eef3'}}>
+        		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="aFullyResponsiveCMS" viewBox="0 0 375 667" style={{background: '#e9eef3'}} aria-labelledby="rwdCMS-title" aria-describedby="rwdCMS-desc" role="img">
+              <title id="rwdCMS-title">A Fully Responsive CMS</title>
+              <desc id="rwdCMS-desc">An animated illustration of a CMS’ UI as it navigates between pages and adapts to different device sizes.</desc>
         			<filter id="shadow--y" width="150%" height="150%">
         				<feOffset result="offOut" in="SourceAlpha" dx="0" dy="4" />
         				<feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
@@ -965,7 +967,9 @@ const Figures = {
     render: function() {
       return (
         <div className="svgHolder">
-        	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="anAllNewWayToBuildWebsites" viewBox="0 0 1024 768" style={{width: '100%', height: '100%'}}>
+        	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="anAllNewWayToBuildWebsites" viewBox="0 0 1024 768" style={{width: '100%', height: '100%'}} aria-labelledby="buildWebsites-title" aria-describedby="buildWebsites-desc" role="img">
+          <title id="buildWebsites-title">An All-New Way to Build Websites</title>
+          <desc id="buildWebsites-desc">An animated illustration of a simplified website layout as it adapts to different device sizes.</desc>
         		<g id="layout">
         			<rect id="layout-1" className="layout" width="1024" height="768" style={{strokeWidth: '8'}} />
         			<rect id="layout-2" className="layout" width="200" height="50" transform="translate(20,20)" />

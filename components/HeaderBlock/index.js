@@ -26,7 +26,7 @@ class HeaderBlock extends Component {
     }
 
     return (
-      <header className={'cf mb-4 relative sectionBlock--' + camelCase(title)}>
+      <header className={'cf mb-4 relative sectionBlock--' + camelCase(title)} role="banner">
         <div className="left@md w-25@md px-2 px-3@sm pl-0@md pr-3@md">
           <h1 className="h1 caps lineHeight-3 mb-1">{formattedTitle}</h1>
           <RhymesWith />

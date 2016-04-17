@@ -336,6 +336,17 @@ const Figures = {
       t1.add([SVG_xlToSm, device_xlToSm, fullWidth_xlToSm, outlinesOut_xlToSm, toolbarHamburgerIn_xlToSm, toolbarTitleIn_xlToSm, toolbarContentsOut_xlToSm, dbHeaderOut_xlToSm, ru_xlToSm, ruBkg_xlToSm, ruBorder_xlToSm, ruHeading_xlToSm, ruIcon1_xlToSm, ruIcon2_xlToSm, ruIcon3_xlToSm, ruIcon4_xlToSm, ruIcon5_xlToSm, ruIcon6_xlToSm, list_xlToSm, ra_xlToSm, tiles_xlToSm], '+=2');
 
       t1.seek('start');
+
+
+      svg.paused = false;
+      svg.addEventListener('click', function() {
+        if ( svg.paused ) {
+          t1.play();
+        } else {
+          t1.pause();
+        }
+        svg.paused = !svg.paused;
+      })
     },
 
     render: function() {
@@ -962,6 +973,17 @@ const Figures = {
       t1.add(fadeEverythingOut, '+=1');
 
       t1.play('start');
+
+
+      svg.paused = false;
+      svg.addEventListener('click', function() {
+        if ( svg.paused ) {
+          t1.play();
+        } else {
+          t1.pause();
+        }
+        svg.paused = !svg.paused;
+      })
     },
 
     render: function() {

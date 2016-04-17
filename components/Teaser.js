@@ -23,7 +23,7 @@ class Teaser extends Component {
 
     return (
       // TODO: Replace the flexItem-50 class with something more dynamic (quantity queries?)
-      <article className={row ? 'flexItem-50 mb-3 mb-0@sm pr-3@sm' : 'mb-3 mb-4@sm'} role="article">
+      <article className={row ? 'flexItem-50 mb-4 pr-3@sm' : 'mb-4'} role="article">
         <h3 id={id} className="h4 mb-0"><Link to={prefixLink(page.path)} className="camoLink">{title}</Link></h3>
         {byline}
         <div className="mt-2">{blurb}</div>

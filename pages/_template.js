@@ -9,6 +9,10 @@ import Footer from 'components/Footer'
 
 import 'styles/styles.css'
 
+if (process.env.NODE_ENV === 'development') {
+  require("script!../node_modules/tota11y/build/tota11y.min.js")
+}
+
 
 class Template extends Component {
 

@@ -11,7 +11,15 @@ import SkipLink from 'components/SkipLink'
 import 'styles/styles.css'
 
 if (process.env.NODE_ENV === 'development') {
-  require("script!../node_modules/tota11y/build/tota11y.min.js")
+  require('script!../node_modules/tota11y/build/tota11y.min.js')
+}
+
+if ( typeof window !== 'undefined' ) {
+  require('script!../node_modules/gsap/src/minified/TweenLite.min.js')
+  require('script!../node_modules/gsap/src/minified/TimelineMax.min.js')
+  require('script!../node_modules/gsap/src/minified/plugins/AttrPlugin.min.js')
+  require('script!../node_modules/gsap/src/minified/plugins/CSSPlugin.min.js')
+  require('script!../node_modules/gsap/src/minified/easing/EasePack.min.js')
 }
 
 

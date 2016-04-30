@@ -22,10 +22,11 @@ class Pages extends Component {
 
     let i = 0
     sortedPages.forEach((page) => {
-      if (access(page, 'file.ext') === 'md' &&
-          !includes(page.path, '/404') &&
-          (!limit || i < limit) &&
-          (!folder || folder === access(page, 'file.dirname').split('/')[0])) {
+      if ( access(page, 'file.ext') === 'md' && 
+           !includes(page.path, '/404') &&
+           (!access(page, 'data.draft')) &&
+           (!limit || i < limit) &&
+           (!folder || folder === access(page, 'file.dirname').split('/')[0]) ) {
         switch ( folder ) {
           // TODO: Figure out why this case is throwing the "two children have the same key" warning
           case config.work.dir:

@@ -22,9 +22,14 @@ class Pages extends Component {
 
     let i = 0
     sortedPages.forEach((page) => {
-      if ( access(page, 'file.ext') === 'md' && 
+      let draft = false
+      if (process.env.NODE_ENV === 'production') {
+        draft = access(page, 'data.draft') || false
+      }
+
+      if ( access(page, 'file.ext') === 'md' &&
            !includes(page.path, '/404') &&
-           (!access(page, 'data.draft')) &&
+           (!draft) &&
            (!limit || i < limit) &&
            (!folder || folder === access(page, 'file.dirname').split('/')[0]) ) {
         switch ( folder ) {

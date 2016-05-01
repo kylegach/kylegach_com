@@ -6,6 +6,7 @@ import access from 'safe-access'
 import Byline from '../components/Byline'
 import CommentPrompt from '../components/CommentPrompt'
 import Figures from 'components/Figures'
+import ReadNext from 'components/ReadNext'
 
 import '../styles/markdown.css'
 
@@ -85,13 +86,18 @@ class MDWrapper extends Component {
       <DocumentTitle title={`${title} • ${config.siteTitle}`}>
         <main className="maxW-3 mx-auto mb-2 mb-4@sm" role="main">
           <article role="article">
-            <h1 className="h1 mb-0">{title}</h1>
-            { byline }
+            <header>
+              <h1 className="h1 mb-0">{title}</h1>
+              { byline }
+            </header>
             { intro }
             { workHeader }
             <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
+            <footer>
+              { prompt }
+              <ReadNext post={page} pages={route.pages} />
+            </footer>
           </article>
-          { prompt }
         </main>
       </DocumentTitle>
     )

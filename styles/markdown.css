@@ -1,10 +1,22 @@
 @import './modules/_variables.css';
 
 .markdown {
+  & h2,
+  & h3,
+  & p,
+  & ol,
+  & ul,
+  & table {
+    margin: calc(var(--lineHeight-4)*1rem) 0;
+  }
 
   & h2,
   & h3 {
-    margin-top: 2.5rem;
+    margin-top: 0;
+
+    &:not(:first-child) {
+      margin-top: 2.5rem;
+    }
   }
 
   & ol,
@@ -18,21 +30,11 @@
     }
   }
 
-  & pre {
-    background: var(--darker-1);
-    overflow: auto;
-    padding: var(--space-2);
-    margin: calc(var(--lineHeight-4)*1rem) 0;
-
-    @nest .is-reverse & {
-      background: var(--lighter-1);
-    }
-  }
-
-  & p > img,
+  & > img,
   & figure {
     background-color: var(--lighter-4);
     display: block;
+    margin: 0 auto calc(var(--lineHeight-4)*1rem);
     padding: var(--space-1);
 
     @nest .is-reverse & {
@@ -40,12 +42,67 @@
     }
   }
 
-  & figure {
-    margin-bottom: calc(var(--lineHeight-4)*1rem);
+  & table {
+    border-collapse: collapse;
+    font-size: var(--h5);
+    min-width: 100%;
+  }
+
+  & td, & th {
+    border-bottom: 1px solid var(--borderColor-light);
+    padding: var(--space-1) var(--space-3) var(--space-1) 0;
+    text-align: left;
+
+    @nest .is-reverse & {
+      border-bottom: 1px solid var(--borderColor-light-reverse);
+    }
+  }
+
+  & th {
+    font-weight: var(--fontWeight-bold);
+  }
+
+  & table > caption,
+  & figcaption {
+    font-size: var(--h5);
+    font-style: italic;
+  }
+
+  & table > caption {
+    caption-side:bottom;
+    text-align: center;
+    margin-top: var(--space-1);
   }
 
   & figcaption {
+    display: inline-block;
+    margin: var(--space-1) auto 0;
+    text-align: left;
+  }
+
+  & figure {
+    margin-bottom: calc(var(--lineHeight-4)*1rem);
+    text-align: center;
+  }
+
+  & figure > * {
+    margin: 0 auto;
+  }
+
+  & figure > img {
+    display: block;
+  }
+
+  & pre {
+    background: var(--darker-1);
     font-size: var(--h5);
+    overflow: auto;
+    padding: var(--space-2);
+    margin: calc(var(--lineHeight-4)*1rem) 0;
+
+    @nest .is-reverse & {
+      background: var(--lighter-1);
+    }
   }
 
   & .left  { margin-right: calc(var(--lineHeight-4)*1rem); }
@@ -72,10 +129,15 @@
   font-size: var(--h5);
 }
 
+.footnotes-list,
+.footnotes-list p {
+  margin: 0;
+}
+
 .footnotes-sep {
   border: none;
   border-top: 1px solid var(--borderColor-light);
-  margin: var(--space-3) 0;
+  margin: calc(var(--lineHeight-4)*1rem) 0;
 
   @nest .is-reverse & {
     border-top-color: var(--borderColor-light-reverse);

@@ -31,6 +31,11 @@ class Root extends Component {
           <title>{title}</title>
           { favicons }
           { cssLink }
+          {/* TODO: How to bundle this script with the rest of them? It didn’t work
+                    in Safari when I did so.
+          */}
+          <script src="//npmcdn.com/fontfaceobserver@1.7.1/fontfaceobserver.js"></script>
+          <script dangerouslySetInnerHTML={{ __html: config.js.font }} />
         </head>
         <body>
           {/* TODO: How to move this script into the <head>? Doing so gives an

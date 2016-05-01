@@ -6,11 +6,13 @@ body {
   line-height: var(--lineHeight-4);
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--webFont);
-  font-weight: normal;
-  letter-spacing: calc(var(--letterSpacing-caps)/2);
+.webfonts-loaded {
+  & h1, & h2, & h3, & h4, & h5, & h6,
+  & .h1, & .h2, & .h3, & .h4, & .h5, & .h6 {
+    font-family: var(--webFont);
+    font-weight: normal;
+    letter-spacing: calc(var(--letterSpacing-caps)/2);
+  }
 }
 
 .fontFamily-inherit { font-family: inherit }

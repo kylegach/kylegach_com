@@ -14,11 +14,11 @@ When the time came to start building responsive sites, something for which I had
 
 The key to this new system is a separation of concerns illustrated above. We separated the structure of the site into **Layouts**, the look-and-feel into **Themes**, and the actual content into **Widgets**. This made each component reusable in only the ways it needed to be and, crucially, allowed us to offer built-in responsiveness instead of requiring a custom solution for each site.
 
-![Layout illustration](./Layout.png) {.left}
+<img src="./Layout.jpg" alt="Layout illustration" class="left" />
 
 **Layouts** are an XML representation of a traditional wireframe for the site. They describe which Containers (more on those in a bit) exist and in which arrangement. They also define the major media query breakpoints (e.g. when the sidebar of a site moves from under the main content to beside it) for the site and are _highly_ reusable. We chose XML because it is highly expressive, easily updated and understood, and easy to validate, to prevent errors early in the process. Because Layouts are completely separated from the look-and-feel and content of the site, they can be re-used with little to no effort. After building our first few sites using the new system, which I carefully supervised, we built up a nice library of common site layout patterns, codified into Layouts. For the next six months, I continued to regularly review Design’s comps and offer feedback and suggestions to ensure they used their new capabilities to their best and fullest potential.
 
-![Theme illustration](./Theme.png) {.left}
+<img src="./Theme.jpg" alt="Theme illustration" class="left" />
 
 **Themes** provide the aesthetic of the site, the fonts, colors, textures, spacing, etc... Importantly, they do not require the user to even think about responsiveness, since that is handled by the Layout and Widgets. Rather than forcing Web Admins to write the CSS for these Themes by hand, we built a <abbr title="What you see is what you get">WYSIWYG</abbr> interface to more efficiently translate the comp from Design into a working site.
 
@@ -29,12 +29,12 @@ This decision provided a lot of wins:{.cf}
 3. The separation of aesthetic from structure and content allows us to redesign a site without migrating any content, which was previously impossible.
 3. While Themes are too specific to an individual site to be shared with another site, a site’s multiple Themes are often quite similar and our interface allows for easy modification of one or more Themes simultaneously.
 
-![Widget illustration](./Widget.png) {.left}
+<img src="./Widget.jpg" alt="Widget illustration" class="left" />
 
 Finally, we have **Widgets**, which hold the content. Layouts are made of Containers, which hold a grid into which the client can drag-and-drop Widgets. This is the biggest improvement over the previous system. Previously, clients did not have access to anything other than the main content area of a page, requiring an email or phone call to Support just to switch out some content in their sidebar. Now, not only do they have that access, but we reduced a 17-step process across five screens to a simple drag-and-drop action and a popup to quickly configure the new Widget’s options. (Well, simple from the author’s perspective. As you can see in the figure below, it’s anything but simple.) There are Widgets for all types of content. To name a few: a full-featured <abbr title="What you see is what you get">WYSIWYG</abbr> editor; a quick, easy way to build a fully-responsive data table; drop-in images and slideshows; and a multitude of “Module Widgets”, which dynamically pull in content from other areas of the site.
 
 <figure>
-  <img src="./GridSpecTargets.png" alt="Sketch of drag-and-drop grid targets and their behavior" />
+  <img src="./GridSpecTargets.jpg" srcset="./GridSpecTargets@2x.jpg 2x" alt="Sketch of drag-and-drop grid targets and their behavior" />
   <figcaption>One of many sketches to figure out how the drag-and-drop should operate. We opted for the third scenario, on the right.</figcaption>
 </figure>
 

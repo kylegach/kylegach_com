@@ -3,7 +3,7 @@ title: A Fully Responsive CMS
 path: /work/a-fully-responsive-cms/
 date: 2016-04-12T13:18:34Z
 blurb: We redesigned the administrative interface to be responsive, faster in every way, and easier to use and maintain.
-intro: Clients were asking to be able to update their site from their phone, so we figured out how to make the entire CMS responsive, while maintaining full functionality.
+intro: Clients were asking to be able to update their sites from their phones, so we figured out how to make the entire CMS responsive, while maintaining full functionality.
 figure: AFullyResponsiveCMS
 responsibilities: Front-end development & architecture; Prototyping; UX testing & design
 ---

@@ -1,7 +1,6 @@
 @import '../node_modules/normalize.css/normalize.css';
 
 @import './modules/_variables.css';
-/*@import './modules/_fonts.css';*/
 @import './modules/_globals.css';
 @import './modules/_typography.css';
 @import './modules/_typeScale.css';
@@ -21,7 +20,7 @@
 @import './components/_stickyFooter.css';
 
 @font-face {
-	font-family: 'league_spartanregular';
+	font-family: 'leagueSpartan-bold';
 	src: url('./leaguespartan-bold-webfont.eot');
 	src: url('./leaguespartan-bold-webfont.eot?#iefix') format('embedded-opentype'),
 		url('./leaguespartan-bold-webfont.woff2') format('woff2'),

@@ -4,6 +4,7 @@ import DocumentTitle from 'react-document-title'
 import access from 'safe-access'
 
 import Byline from '../components/Byline'
+import CommentPrompt from '../components/CommentPrompt'
 import Figures from 'components/Figures'
 
 import '../styles/markdown.css'
@@ -18,18 +19,24 @@ class MDWrapper extends Component {
     const dirName = access(page, 'file.dirname').split('/')[0]
     const title = access(page, 'data.title') || page.path
     const introTxt = access(page, 'data.intro') || ''
+    const commentPrompt = access(page, 'data.commentPrompt') || false
     const responsibilities = access(page, 'data.responsibilities') || ''
     const figure = access(page, 'data.figure') || ''
 
     const byline = (date && dirName === 'writes') ? (<Byline date={date} />) : ''
 
     let intro
+    let prompt
     let Responsibilities = []
     let Figure = []
     let workHeader = []
 
     if ( introTxt ) {
-      intro = (<p className="fs-3 mt-2">{ introTxt }</p>)
+      intro = (<p className="fs-3 mt-2" dangerouslySetInnerHTML={{ __html: introTxt }} />)
+    }
+
+    if ( commentPrompt ) {
+      prompt = <CommentPrompt title={title} />
     }
 
     if ( figure ) {
@@ -84,6 +91,7 @@ class MDWrapper extends Component {
             { workHeader }
             <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
           </article>
+          { prompt }
         </main>
       </DocumentTitle>
     )

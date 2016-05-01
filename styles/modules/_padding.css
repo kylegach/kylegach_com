@@ -49,7 +49,7 @@
   .px-0\@sm { padding-left:   0; padding-right:  0 }
   .py-0\@sm { padding-top:    0; padding-bottom: 0 }
 
-  .p-1 \@sm { padding:        var(--space-1) }
+  .p-1\@sm  { padding:        var(--space-1) }
   .pt-1\@sm { padding-top:    var(--space-1) }
   .pr-1\@sm { padding-right:  var(--space-1) }
   .pb-1\@sm { padding-bottom: var(--space-1) }
@@ -73,7 +73,7 @@
   .px-3\@sm { padding-left:   var(--space-3); padding-right:  var(--space-3) }
   .py-3\@sm { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
 
-  .p-4 \@sm { padding:        var(--space-4) }
+  .p-4\@sm  { padding:        var(--space-4) }
   .pt-4\@sm { padding-top:    var(--space-4) }
   .pr-4\@sm { padding-right:  var(--space-4) }
   .pb-4\@sm { padding-bottom: var(--space-4) }
@@ -91,7 +91,7 @@
   .px-0\@md { padding-left:   0; padding-right:  0 }
   .py-0\@md { padding-top:    0; padding-bottom: 0 }
 
-  .p-1 \@md { padding:        var(--space-1) }
+  .p-1\@md  { padding:        var(--space-1) }
   .pt-1\@md { padding-top:    var(--space-1) }
   .pr-1\@md { padding-right:  var(--space-1) }
   .pb-1\@md { padding-bottom: var(--space-1) }
@@ -115,7 +115,7 @@
   .px-3\@md { padding-left:   var(--space-3); padding-right:  var(--space-3) }
   .py-3\@md { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
 
-  .p-4 \@md { padding:        var(--space-4) }
+  .p-4\@md  { padding:        var(--space-4) }
   .pt-4\@md { padding-top:    var(--space-4) }
   .pr-4\@md { padding-right:  var(--space-4) }
   .pb-4\@md { padding-bottom: var(--space-4) }
@@ -133,7 +133,7 @@
   .px-0\@lg { padding-left:   0; padding-right:  0 }
   .py-0\@lg { padding-top:    0; padding-bottom: 0 }
 
-  .p-1 \@lg { padding:        var(--space-1) }
+  .p-1\@lg  { padding:        var(--space-1) }
   .pt-1\@lg { padding-top:    var(--space-1) }
   .pr-1\@lg { padding-right:  var(--space-1) }
   .pb-1\@lg { padding-bottom: var(--space-1) }
@@ -157,7 +157,7 @@
   .px-3\@lg { padding-left:   var(--space-3); padding-right:  var(--space-3) }
   .py-3\@lg { padding-top:    var(--space-3); padding-bottom: var(--space-3) }
 
-  .p-4 \@lg { padding:        var(--space-4) }
+  .p-4\@lg  { padding:        var(--space-4) }
   .pt-4\@lg { padding-top:    var(--space-4) }
   .pr-4\@lg { padding-right:  var(--space-4) }
   .pb-4\@lg { padding-bottom: var(--space-4) }

@@ -2,16 +2,16 @@
 title: Of the Web
 path: /writing/of-the-web/
 date: 2016-04-12T14:01:34Z
+intro: I’ve been <em>on</em> the web for most of my life, but, without a site to call home, I haven’t been <a href="https://adactio.com/journal/9016"><em>of</em> the web</a> for far too long.
+commentPrompt: true
 ---
 
-I’ve been _on_ the web for most of my life, but, without a site to call home, I haven’t been [_of_ the web](https://adactio.com/journal/9016) for far too long.
+I’m proud to announce the launch of this site, by far my most personal website ever. Making this spot on the web mine has taken great effort and care, and I’ve deeply enjoyed all of it^[Well, almost all of it. Those SVG animations were fairly tedious to make.]. Like any successful project, I defined a vision/goals for this site before I started any work:
 
-I’m thrilled to change that with the launch of this site. I didn’t build it for only me, though. One of my favorite things about building on the web is how freely knowledge and tools are shared. I wanted to contribute to that. So, to that end:
+1. **[Learn and employ many new tools](/colophon/) to accurately demonstrate my understanding of building for the web, in a manner I believe to be best**. This site’s primary purpose is to serve as my portfolio, and I wanted to use this site as a way to show off a bit, when doing so isn’t always appropriate or possible for the projects I work on at [CivicPlus](http://civicplus.com).
 
-1. While I didn’t hesitate to [learn and employ many new tools](/colophon/), I did so with an eye toward maintaining the utility of View Source. I learned almost everything I know about HTML &amp; CSS from viewing the source of sites I found inspiring, beautiful, and clever. I hope that this site’s code can help someone in the same way. The full source code is available on [Github](https://github.com/kylegach/kylegach_com).
+2. **Make this site as accessible and fast as I can**. The web is best when it is open to all, and making things accessible and fast (which are often overlapping concerns) helps provide that. I’ll probably be writing much more about this.
 
-2. I plan to write about design challenges I’ve faced and other things I’ve learned. At first, this will likely focus on the process of building this site, but I’m excited to see where I’m led to write from there.
+3. **Build for learnability**. I learned everything I know about building for the web from the generosity and kindness of others who shared their knowledge, tools, struggles, and passions. I owe my entire career to the web community, and I want to give back. While viewing source in the age of module bundlers and style processors is of less utility than it used to be, I hope that sharing this [site’s source code](https://github.com/kylegach/kylegach_com) can help someone curious enough to dig in.
 
-3. I <del>have</del> <ins>will</ins> put considerable effort into making this site as accessible and fast as possible. It is my hope that this, along with some explanatory posts/guides, can serve as an example for the way I believe the web should be: fully accessible, lightning fast, and responsive.
-
-Thanks for reading!
+It’s empowering to have a place of your own, viewable to all, where every aspect is exactly as you want it. Or, at least, as close as you can get it within your knowledge and skill set. For example, I get frustrated when I have to look at a white screen at night, so I made a “night mode” that automatically flips on after sunset. I’m eager to find more ways to express and practice building my ideal web with design, code, and prose, and I’m delighted to finally have a place to do so.

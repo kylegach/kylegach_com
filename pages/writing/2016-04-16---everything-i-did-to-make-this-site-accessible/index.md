@@ -1,10 +1,12 @@
 ---
 title: Everything I Did to Make This Site Accessible
 path: /writing/everything-i-did-to-make-this-site-accessible/
-date: 2016-04-13T04:54:54Z
+date: 2016-04-16T04:54:54Z
+intro: I believe the web is meant to be open and available to everyone, no matter who they are, what device/software they’re using, or the speed/quality of the network they’re on.
+commentPrompt: true
 ---
 
-I believe the web is meant to be open and available to everyone, no matter who they are, what device/software they’re using, or the speed/quality of the network they’re on. Accessibility (also known as [a11y](https://en.wikipedia.org/wiki/Numeronym)) is so much bigger than just making things work for people with no or low vision. But, even if you define it so narrowly, that’s still [285 million people](http://www.who.int/mediacentre/factsheets/fs282/en/) or ~5% of the world’s population. What follows is a collection of everything I’ve done to make this site as accessible as I could.
+Accessibility (also known as [a11y](https://en.wikipedia.org/wiki/Numeronym)) is so much bigger than just making things work for people with no or low vision. But, even if you define it so narrowly, that’s still [285 million people](http://www.who.int/mediacentre/factsheets/fs282/en/) or ~5% of the world’s population. What follows is a collection of everything I’ve done to make this site as accessible as I could.
 
 _Note: I‘m using [The A11y Project‘s helpful checklist](http://a11yproject.com/checklist.html) as a rough starting point for this post._
 

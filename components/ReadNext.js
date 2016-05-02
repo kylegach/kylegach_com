@@ -36,7 +36,7 @@ class ReadNext extends Component {
         return (
           <div className="mt-4 p-2 border borderColor-light">
             <h3 className="fs-5 caps mb-2">Thanks for reading!</h3>
-            <p>There are no posts after this one. Take a look at the <Link to={prefixLink('/' + config.writing.dir + '/')}>Archives</Link> for more.</p>
+            <p>Check the <Link to={prefixLink('/' + config.writing.dir + '/')}>Archives</Link> for more.</p>
           </div>
         )
       }

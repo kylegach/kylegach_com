@@ -1,6 +1,5 @@
-import { config } from 'config'
 import React, { Component, PropTypes } from 'react'
-import DocumentTitle from 'react-document-title'
+import Helmet from 'react-helmet'
 import access from 'safe-access'
 
 import Byline from '../components/Byline'
@@ -83,23 +82,22 @@ class MDWrapper extends Component {
     }
 
     return (
-      <DocumentTitle title={`${title} • ${config.siteTitle}`}>
-        <main className="maxW-3 mx-auto mb-2 mb-4@sm" role="main">
-          <article role="article">
-            <header>
-              <h1 className="h1 mb-0">{title}</h1>
-              { byline }
-            </header>
-            { intro }
-            { workHeader }
-            <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
-            <footer>
-              { prompt }
-              <ReadNext post={page} pages={route.pages} />
-            </footer>
-          </article>
-        </main>
-      </DocumentTitle>
+      <main className="maxW-3 mx-auto mb-2 mb-4@sm" role="main">
+        <Helmet title={title} />
+        <article role="article">
+          <header>
+            <h1 className="h1 mb-0">{title}</h1>
+            { byline }
+          </header>
+          { intro }
+          { workHeader }
+          <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
+          <footer>
+            { prompt }
+            <ReadNext post={page} pages={route.pages} />
+          </footer>
+        </article>
+      </main>
     )
   }
 

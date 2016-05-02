@@ -1,7 +1,7 @@
-import { prefixLink } from 'gatsby-helpers'
+import { config } from 'config'
 import moment from 'moment'
 import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
+import Helmet from 'react-helmet'
 import suncalc from 'suncalc'
 
 import Header from 'components/Header'
@@ -45,6 +45,10 @@ class Template extends Component {
 
     return (
       <div className={wrapperClasses}>
+        <Helmet
+          defaultTitle={config.siteTitle}
+          titleTemplate={`%s • ${config.siteTitle}`}
+        />
         { header }
         <SkipLink to="#nav" text="Skip to navigation" />
         <div className="content maxW-4 mx-auto px-2 px-4@sm pb-4">

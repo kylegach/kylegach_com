@@ -1,14 +1,13 @@
 import { config } from 'config'
 import { prefixLink } from 'gatsby-helpers'
 import React, { Component, PropTypes } from 'react'
-import DocumentTitle from 'react-document-title'
+import Helmet from 'react-helmet'
 
 
 class Root extends Component {
 
   render () {
-    // TODO: Compare with other pages
-    const title = DocumentTitle.rewind()
+    let head = Helmet.rewind();
 
     let favicons
     let cssLink
@@ -28,7 +27,7 @@ class Root extends Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>{title}</title>
+          <title>{config.siteTitle}</title>
           { favicons }
           { cssLink }
           {/* TODO: How to bundle this script with the rest of them? It didn’t work

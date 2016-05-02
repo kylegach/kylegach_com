@@ -1,6 +1,5 @@
-import { config } from 'config'
 import React, { Component, PropTypes } from 'react'
-import DocumentTitle from 'react-document-title'
+import Helmet from 'react-helmet'
 
 
 class HTMLWrapper extends Component {
@@ -9,9 +8,10 @@ class HTMLWrapper extends Component {
     const post = this.props.route.page.data
 
     return (
-      <DocumentTitle title={`${post.title} • ${config.siteTitle}`}>
+      <div>
+        <Helmet title={post.title} />
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
-      </DocumentTitle>
+      </div>
     )
   }
 

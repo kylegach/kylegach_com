@@ -10,10 +10,6 @@
   .flex\@md { display: flex }
 }
 
-@media (--bp-lg) {
-  .flex\@lg { display: flex }
-}
-
 .flex-reverse       { flex-direction: row-reverse }
 .flex-column        { flex-direction: column }
 .flex-columnReverse { flex-direction: column-reverse }

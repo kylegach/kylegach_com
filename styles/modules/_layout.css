@@ -39,12 +39,6 @@
   .float-none\@md { float: none }
 }
 
-@media (--bp-lg) {
-  .left\@lg       { float: left }
-  .right\@lg      { float: right }
-  .float-none\@lg { float: none }
-}
-
 
 /* Widths */
 
@@ -71,15 +65,6 @@
   .w-66\@md  { width: 66.666666666% }
   .w-75\@md  { width: 75% }
   .w-100\@md { width: 100% }
-}
-
-@media (--bp-lg) {
-  .w-25\@lg  { width: 25% }
-  .w-33\@lg  { width: 33.333333333% }
-  .w-50\@lg  { width: 50% }
-  .w-66\@lg  { width: 66.666666666% }
-  .w-75\@lg  { width: 75% }
-  .w-100\@lg { width: 100% }
 }
 
 .maxW-1 { max-width: var(--width-1) }

@@ -14,7 +14,7 @@ class Root extends Component {
     let AnalyticsJS1
     let AnalyticsJS2
 
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === 'build-javascript') {
       favicons = config.favicons
       cssLink = <link rel="stylesheet" href={prefixLink('/styles.css')} />
       AnalyticsJS1 = config.js.analytics

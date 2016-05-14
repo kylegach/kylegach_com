@@ -23,7 +23,7 @@ class Pages extends Component {
     let i = 0
     sortedPages.forEach((page) => {
       let draft = false
-      if (process.env.NODE_ENV === 'production') {
+      if (process.env.NODE_ENV === 'build-javascript') {
         draft = access(page, 'data.draft') || false
       }
 

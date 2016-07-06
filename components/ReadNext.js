@@ -19,7 +19,7 @@ class ReadNext extends Component {
            pages[i].file.dirname.split('/')[0] === config.writing.dir ) {
         for ( let j=i+1; j < pages.length; j++ ) {
           let draft = false
-          if (process.env.NODE_ENV === 'build-javascript') {
+          if (process.env.NODE_ENV === 'production') {
             draft = access(pages[j], 'data.draft') || false
           }
 

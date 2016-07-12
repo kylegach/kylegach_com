@@ -1,8 +1,7 @@
 /* Typography */
 
 body {
-  /* Using the system font, if available (for now?) */
-  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
   line-height: var(--lineHeight-4);
 }
 

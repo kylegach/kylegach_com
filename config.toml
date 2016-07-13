@@ -1,0 +1,94 @@
+siteTitle = "Site Title"
+url = "http://example.com"
+linkPrefix = "/notUsedYet"
+email = "name@example.com"
+twitter = "@handle"
+github = "username"
+
+[js]
+head = """
+if ('classList' in document.createElement('div') && 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach) {
+  document.documentElement.classList += 'js';
+  var script = document.createElement('script');
+  script.src = '/bundle.js';
+  document.getElementsByTagName('body')[0].appendChild(script);
+}
+"""
+analytics = """
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-xxxxxxxx-x', 'auto');
+ga('send', 'pageview');
+"""
+font = """
+var font = new FontFaceObserver('leagueSpartan-bold');
+font.load().then(function () {
+  document.documentElement.className += ' webfonts-loaded';
+});
+"""
+
+favicons = '''
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=1">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=1">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=1">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=1">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=1">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=1">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=1">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=1">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=1" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=1" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=1" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=1">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#1f262e">
+<link rel="shortcut icon" href="/favicon.ico?v=1">
+<meta name="apple-mobile-web-app-title" content="example.com">
+<meta name="application-name" content="example.com">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=1">
+<meta name="theme-color" content="#1f262e">
+'''
+
+[header]
+text = '''
+<p>Header text</p>
+'''
+
+[work]
+title = "Work Title"
+blurb = "Work blurb"
+dir = "work"
+
+[writing]
+title = "Writing Title"
+blurb = "Writing blurb"
+dir = "writing"
+
+[about]
+title = "About Title"
+text = '''
+<div class="left@md mb-3 flex@sm items-center">
+  <img src="/avatar.jpg" srcset="/avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
+  <p class="flexItem-auto">About you...</p>
+</div>
+<div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
+  <h3 class="h4 mb-0">A list of things</h3>
+  <ul style="margin-top:1.5rem">
+    <li>One thing</li>
+    <li>Two thing</li>
+    <li>Red thing</li>
+    <li>Blue thing</li>
+  </ul>
+</div>
+<div class="left@sm w-50@sm pl-2@sm">
+  <h3 class="h4 mb-0">Open, accessible, fast, responsive</h3>
+  <ul style="margin-top:1.5rem">
+    <li>Please</li>
+    <li>Build</li>
+    <li>With</li>
+    <li>Progressive</li>
+    <li>Enhancement</li>
+  </ul>
+</div>
+'''

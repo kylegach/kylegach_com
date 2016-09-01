@@ -33,7 +33,7 @@ class Root extends Component {
           {/* TODO: How to bundle this script with the rest of them? It didn’t work
                     in Safari when I did so.
           */}
-          <script src="//npmcdn.com/fontfaceobserver@1.7.1/fontfaceobserver.js"></script>
+          <script src="//unpkg.com/fontfaceobserver@1.7.1/fontfaceobserver.js"></script>
           <script dangerouslySetInnerHTML={{ __html: config.js.font }} />
         </head>
         <body>

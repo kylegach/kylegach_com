@@ -61,19 +61,13 @@ class Template extends Component {
 
   componentDidMount = () => {
     /*
-    I hard-coded Boulder's lat & long instead of using geolocation because:
-    a) I think a prompt would be weird for the user, given the site's purpose
-    b) Most of my target audience is in Boulder
-    c) Nearly all of my audience is likely to be in the US and it's acceptable
-       if the effect is off by ±2 hrs.
+    fetchIP fetches the IP of the visitor and looks up the latitude and longitude,
+    with this information the sunset and sunset times are calculated
+    so we can set a bright or dark background.
     */
-    const time = moment()
-    const sunset = suncalc.getTimes(time, 40.027435, -105.251945).sunset
-    const sunrise = suncalc.getTimes(time, 40.027435, -105.251945).sunrise
 
-    if ( time.isAfter(sunset) || time.isBefore(sunrise) ) {
-      this.toggleReverse()
-    }
+    this.fetchIP()
+
   }
 
   toggleReverse = () => {
@@ -81,7 +75,31 @@ class Template extends Component {
       isReverse: !this.state.isReverse
     })
   }
+
+  fetchIP = () => {
+    fetch('//freegeoip.net/json/')
+      .then((response)=>{
+          return response.json();
+      }).then((data)=>{
+          let lat = data.latitude;
+          let long = data.longitude;
+          this.getSunsetSunriseTimes(lat,long);
+      }).catch((error)=>{
+        console.log(error)
+      });
+  }
+
+  getSunsetSunriseTimes = (lat,long) => {
+    const time = moment()
+    const sunset = suncalc.getTimes(time, lat, long).sunset
+    const sunrise = suncalc.getTimes(time, lat, long).sunrise
+
+    if ( time.isAfter(sunset) || time.isBefore(sunrise) ) {
+      this.toggleReverse()
+    }
+  }
 }
+
 
 Template.propTypes = {
   children: PropTypes.any

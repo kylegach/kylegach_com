@@ -1,5 +1,9 @@
 # kylegach_com
 
+> **This is the old version of my site. It is archived for historical purposes.**
+>
+> The [new site's repo is here](https://github.com/kylegach/kylegach.com/).
+
 _Note: Until I work out a proper license, you are free to take all code not in a *.md or *.toml file for whatever purposes you wish. It is my intention that people be able to learn from this source code._
 
 A personal website & portfolio built with [Gatsby](https://github.com/gatsbyjs/gatsby/), a fantastic little static site generator powered by [React](https://facebook.github.io/react/).
